@@ -1,0 +1,110 @@
+/* CSS FOR ISCHOOL DESCRIPTION TITLE, PARAGRAPH, AND QUOTE */
+
+/* css for data sections */
+.dataSections {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #F76902;
+}
+/* css for entire about section, including title, description, quote, quote author */
+.aboutSection {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+/* css for about text section, including about title and about description */
+.aboutText {
+  display: flex;
+  flex: 0 0 65%;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  height: 475px;
+
+  padding-left: 100px;
+
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif
+}
+/* css for title for about section, ex.) 'Leveraging technology to sol...' */
+.aboutTitle {
+  width: 100%;
+
+  font-size:3em;
+  line-height: 1em;
+  font-weight: bold;
+
+  white-space: nowrap;
+
+  z-index: 4;
+}
+/* css for description for about section, ex.) 'In the modern world...' */
+.aboutDescription {  
+  min-width: 100%;
+
+  padding: 10px 13% 0 0;
+
+  font-size: 1.4em;
+  line-height: 1.5em;
+  text-align: left;
+}
+/* css for about quote section, including quote and quote author */
+.aboutQuote { 
+  width: 87%;
+
+  border-radius: 15px;
+
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+/* css for Lottie computer animation */
+.computerAnimation {
+  flex: 0 0 35%;
+  align-items: center;
+
+  min-height: 475px;  
+
+  z-index: 1;
+}
+
+/* css media query for when viewport width < 1200px */
+@media screen and (max-width: 1200px) {
+  .aboutSection {
+    justify-content: center;
+  }
+  .aboutText, .aboutDescription  {
+    flex: initial;
+    padding: 20px 50px;
+    text-align: center;
+  }
+  .aboutQuote {
+    flex: initial;
+
+    width: 100%;
+
+    padding: 20px 75px;
+
+    text-align: center;
+  }
+  .computerAnimation {
+    display: none;
+  }
+}
+
+/* css media query for when viewport width < 900px */
+@media screen and (max-width: 1200px) {
+  .pageTitle {
+      display: none;
+  }
+  .aboutText {
+    height: fit-content;
+}
+  .aboutTitle {
+      white-space: wrap;
+  }
+}

@@ -1,0 +1,122 @@
+/* CSS FOR ISCHOOL PEOPLE */
+
+/* css for people container containing both types of people */
+.peopleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 25px;
+}
+.peopleContainer h1 {
+    display: flex;
+    justify-content: start;
+    width: 65%;
+
+    margin-left: 5%;
+
+    font-size: 2.5em;
+}
+/* css for both containers of people */
+.facultyContainer, .staffContainer {
+    display: flex;
+
+    width: 65%;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+/* css for the scrollbar */
+.facultyContainer::-webkit-scrollbar-thumb, .staffContainer::-webkit-scrollbar-thumb{
+  background-color: black; 
+  border-radius: 0;
+}
+.facultyContainer:hover::-webkit-scrollbar-thumb, .staffContainer:hover::-webkit-scrollbar-thumb {
+  background-color: #F76902; 
+}
+/* add extra margin to bottom of bottom container */
+.staffContainer {
+  margin-bottom: 25px;
+}
+
+/* css for person of either staff or faculty */
+.person {
+  position: relative;
+
+    margin: 10px;
+
+    border: 1px solid rgb(138, 138, 138);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+}
+.person h3 { /* person name */
+    padding: 3% 5% 0 5%;
+    margin: 0;
+
+    font-size: 1.3em;
+    color: black;
+}
+.person h4 { /* person title */
+  padding: 0% 5% 3% 5%;
+  margin: 0;
+
+  font-size: 1em;
+  font-weight: 100;
+  font-style: italic;
+}
+.personImg {
+    display: flex;
+    width: 200px;
+    height: 200px;
+
+
+    object-fit:cover;
+}
+
+/* CSS FOR PERSON MODAL */
+
+/* css for modal 'see details' button */
+.modalButton {
+    width: 100%;
+
+    color: black !important;
+    background: white !important;
+
+    border-radius: 0;
+}
+.modalButton:hover {
+    color: white !important;
+    background: black !important;
+
+    border-radius: 0;
+}
+/* css for modal container */
+.modalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  border: 2px solid #000;
+  box-shadow: 24px;
+  padding: 20px;
+}
+/* css for header of modal, including image and title/tagline */
+.modalHeader {
+  display: flex;
+  align-items: center;
+}
+/* css for modal image in top left corner */
+.modalImage {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+.modalInfo {
+  margin-top: 20px;
+}
+.modalAttribute {
+  margin-top: 20px;
+}
