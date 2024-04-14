@@ -32,7 +32,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <img className="headerImg" src="./src/assets/codeBackground.jpg" alt="Background image of html code" />
+      <img className="headerImg" src="./images/codeBackground.jpg" alt="Background image of html code" />
       <DataSections aboutObj={aboutObj} />
       <Degrees/>
       <Employment/>
